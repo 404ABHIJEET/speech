@@ -1,0 +1,27 @@
+app-model-loader, app-microphone {
+    display: block; /* Ensure they take full width if needed */
+    margin-bottom: 15px; /* Add spacing between elements */
+}
+
+h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #4CAF50;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+textarea {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap; /* Ensures text wraps properly */
+    word-wrap: break-word;
+    border: 1px solid #ddd;
+    max-width: 100%;
+    min-height: 100px;
+    overflow-y: auto;
+}

@@ -1,0 +1,17 @@
+<style>
+    :host ::ng-deep .ck-editor__editable_inline {
+        min-height: 200px !important;
+    }
+    div {
+        display: flex;
+        justify-content: end;
+    }
+</style> 
+
+<ckeditor [(ngModel)]="editorContent" [editor]="Editor" 
+    [config] = "ckEditorConfig" (ready)="onCKEditorReady($event)"
+    (ngModelChange)="onContentChange($event)" >
+</ckeditor>
+
+
+

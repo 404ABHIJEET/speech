@@ -1,0 +1,9 @@
+<mat-tab-group [(selectedIndex)]="activeTabIndex" (selectedIndexChange)="onTabChange($event)">
+    <mat-tab *ngFor="let tab of tabs; let i = index" [label]="tab.title">
+        <div class="editor-container">
+            <dfa-ckeditor [activeIndex]="activeTabIndex" [actualIndex]="i" >
+                
+            </dfa-ckeditor>
+        </div>
+    </mat-tab>
+</mat-tab-group> 
